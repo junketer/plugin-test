@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.oag.test</groupId>
+	<artifactId>plugin-test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>PluginTest</name>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.oag.maven.plugin</groupId>
+				<artifactId>changerequest</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<configuration>
+					<!-- changeRequestDirectory>/home/dan/changeRequestDir</changeRequestDirectory> -->
+					<crUrl>http://localhost:8080/crproxy/change-request</crUrl>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
